@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Art Gallery</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-bs-theme="dark">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
+					<div
+						class="d-lg-flex justify-content-sm-center w-100 justify-content-md-between"
+					>
+						<a class="navbar-brand" href="/index.html">Art Gallery</a>
+						<div></div>
+						<ul class="flex-end navbar-nav me-2 mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Photo Art Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./videogallery.html"
+									>Video Art Gallery</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./about.html">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Contact Me</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container-fluid my-3">
+			<h1 class="text-center mb-5">Contact Me</h1>
+			<div
+				class="d-flex flex-column justify-content-center align-items-center my-3"
+			>
+				<form class="container w-50 row g-3 needs-validation">
+					<div class="col-md-6">
+						<div class="form-floating mb-3 has-validation">
+							<input
+								type="text"
+								class="form-control"
+								id="floatingInputfname"
+								placeholder="first name"
+								required
+							/>
+							<label for="floatingInputfname">First Name</label>
+							<div class="invalid-feedback">Please choose a username.</div>
+							<div class="valid-feedback">Looks good!</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-floating mb-3">
+							<input
+								type="text"
+								class="form-control"
+								id="floatingInputlname"
+								placeholder="last name"
+								required
+							/>
+							<label for="floatingInputlname">Last Name</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-floating mb-3">
+							<input
+								type="email"
+								class="form-control"
+								id="floatingInputemail"
+								placeholder="email@example.com"
+								required
+							/>
+							<label for="floatingInputemail">Email</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form-floating mb-3">
+							<input
+								type="text"
+								class="form-control"
+								id="floatingInputsubject"
+								placeholder="subject"
+								required
+							/>
+							<label for="floatingInputsubject">Subject</label>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-floating">
+							<textarea
+								class="form-control"
+								placeholder="Leave a message"
+								id="floatingTextarea2"
+								style="height: 100px"
+								required
+							></textarea>
+							<label for="floatingTextarea2">Message</label>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="form-check">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								id="gridCheck"
+								checked
+							/>
+							<label class="form-check-label" for="gridCheck">
+								Want to recieve newsletter daily
+							</label>
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-secondary px-5">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container">
+			<footer
+				class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+			>
+				<p class="col-md-4 mb-0 text-body-secondary">© 2024 Art Gallery</p>
+
+				<a
+					href="/"
+					class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+				>
+					<svg class="bi me-2" width="40" height="32">
+						<use xlink:href="#bootstrap"></use>
+					</svg>
+				</a>
+
+				<ul class="nav col-md-4 justify-content-end">
+					<li class="nav-item">
+						<a href="./index.html" class="nav-link px-2 text-body-secondary"
+							>Photo Art Gallery</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="./videogallery.html"
+							class="nav-link px-2 text-body-secondary"
+							>Video Art Gallery</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="./about.html" class="nav-link px-2 text-body-secondary"
+							>About Me</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="./contact.html" class="nav-link px-2 text-body-secondary"
+							>Contact Me</a
+						>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

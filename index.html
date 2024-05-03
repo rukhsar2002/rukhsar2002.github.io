@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Art Gallery</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-bs-theme="dark">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
+					<div
+						class="d-lg-flex justify-content-sm-center w-100 justify-content-md-between"
+					>
+						<a class="navbar-brand" href="#">Art Gallery</a>
+						<div></div>
+						<ul class="flex-end navbar-nav me-2 mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Photo Art Gallery</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./videogallery.html"
+									>Video Art Gallery</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./about.html">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contact.html">Contact Me</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Carousel -->
+		<div id="carouselExample" class="carousel slide">
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						class="d-block w-100 coursal_image"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>floral person's portrait graffiti.</h5>
+						<p>Dan Farrell</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=1466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						class="d-block w-100 coursal_image"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>blue, black, and orange abstract painting.</h5>
+						<p>Steve Johnson</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?q=80&w=1495&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						class="d-block w-100 coursal_image"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>multicolored abstract painting.</h5>
+						<p>Steve Johnson</p>
+					</div>
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExample"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExample"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<!-- Gallery -->
+		<div class="container-fluid my-3">
+			<h1 class="text-center">
+				<span class="border-bottom">Photo Art Gallery</span>
+			</h1>
+			<div class="my-3 row gy-2">
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?q=80&w=1495&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						><figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?q=80&w=1495&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="..."
+							/>
+							<figcaption class="figure-caption text-center">
+								Steve Johnson
+							</figcaption>
+						</figure></a
+					>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="..."
+							/>
+							<figcaption class="figure-caption text-center">
+								Dan Farrell
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=1466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=1466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="..."
+							/>
+							<figcaption class="figure-caption text-center">
+								Steve Johnson
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1570393080660-de4e4a15a247?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1570393080660-de4e4a15a247?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="John Schaidler"
+							/>
+							<figcaption class="figure-caption text-center">
+								John Schaidler
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?q=80&w=3172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?q=80&w=3172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Steve Johnson"
+							/>
+							<figcaption class="figure-caption text-center">
+								Steve Johnson
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1547560896-7615fab7b8b3?q=80&w=3159&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1547560896-7615fab7b8b3?q=80&w=3159&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Steve Johnson"
+							/>
+							<figcaption class="figure-caption text-center">
+								Steve Johnson
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1578301978018-3005759f48f7?q=80&w=2888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?q=80&w=2888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1489421931051-521ec235bbca?q=80&w=3058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1489421931051-521ec235bbca?q=80&w=3058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Luis Alfonso Orellana"
+							/>
+							<figcaption class="figure-caption text-center">
+								Luis Alfonso Orellana
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1579541592065-da8a15e49bc7?q=80&w=2901&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1579541592065-da8a15e49bc7?q=80&w=2901&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1580136579312-94651dfd596d?q=80&w=3003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?q=80&w=3003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1577720643360-00432b40139c?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1577720643360-00432b40139c?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1577083862054-7324cd025fa6?q=80&w=3041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1577083862054-7324cd025fa6?q=80&w=3041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1584278773680-8d940a213dcf?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						><figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1584278773680-8d940a213dcf?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure></a
+					>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1578926078693-4eb3d4499e43?q=80&w=2908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						><figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1578926078693-4eb3d4499e43?q=80&w=2908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure></a
+					>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1582201957424-621320ad670d?q=80&w=3109&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1582201957424-621320ad670d?q=80&w=3109&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Birmingham Museums Trust
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=3145&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=3145&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Europeana
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://images.unsplash.com/photo-1579783901467-31b604eac7a8?q=80&w=3161&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					>
+						<figure class="figure">
+							<img
+								src="https://images.unsplash.com/photo-1579783901467-31b604eac7a8?q=80&w=3161&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+								class="rounded w-100 gallery-img"
+								alt="Birmingham Museums Trust"
+							/>
+							<figcaption class="figure-caption text-center">
+								Europeana
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container">
+			<footer
+				class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+			>
+				<p class="col-md-4 mb-0 text-body-secondary">© 2024 Art Gallery</p>
+
+				<a
+					href="/"
+					class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+				>
+					<svg class="bi me-2" width="40" height="32">
+						<use xlink:href="#bootstrap"></use>
+					</svg>
+				</a>
+
+				<ul class="nav col-md-4 justify-content-end">
+					<li class="nav-item">
+						<a href="#" class="nav-link px-2 text-body-secondary"
+							>Photo Art Gallery</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="./videogallery.html"
+							class="nav-link px-2 text-body-secondary"
+							>Video Art Gallery</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="./about.html" class="nav-link px-2 text-body-secondary"
+							>About Me</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="./contact.html" class="nav-link px-2 text-body-secondary"
+							>Contact Me</a
+						>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

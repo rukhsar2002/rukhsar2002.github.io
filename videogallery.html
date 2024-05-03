@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Art Gallery</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body data-bs-theme="dark">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
+					<div
+						class="d-lg-flex justify-content-sm-center w-100 justify-content-md-between"
+					>
+						<a class="navbar-brand" href="#">Art Gallery</a>
+						<div></div>
+						<ul class="flex-end navbar-nav me-2 mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Photo Art Gallery</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Video Art Gallery</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./about.html">About Me</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./contact.html">Contact Me</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Carousel -->
+		<div id="carouselExample" class="carousel slide">
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<video class="d-block w-100 coursal_image" autoplay loop>
+						<source
+							src="https://videos.pexels.com/video-files/1970039/1970039-hd_1920_1080_30fps.mp4"
+							srcset=""
+							type="video/mp4"
+						/>
+					</video>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Person Doing An Abstract Painting.</h5>
+						<p>Steve Johnson</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<video class="d-block w-100 coursal_image" autoplay loop>
+						<source
+							src="https://videos.pexels.com/video-files/6617305/6617305-hd_1920_1080_30fps.mp4"
+							srcset=""
+							type="video/mp4"
+						/>
+					</video>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Multi Colored Liquid in motion</h5>
+						<p>ad urpina</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<video class="d-block w-100 coursal_image" autoplay loop>
+						<source
+							src="https://videos.pexels.com/video-files/1085999/1085999-hd_1920_1080_25fps.mp4"
+							srcset=""
+							type="video/mp4"
+						/>
+					</video>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Man Making A Pencil Sketch.</h5>
+						<p>DAV Grup 1</p>
+					</div>
+				</div>
+			</div>
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExample"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExample"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<!-- Gallery -->
+		<div class="container-fluid my-3">
+			<h1 class="text-center">
+				<span class="border-bottom">Video Art Gallery</span>
+			</h1>
+			<div class="my-3 row gy-2">
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://videos.pexels.com/video-files/1970039/1970039-hd_1920_1080_30fps.mp4"
+						><figure class="figure">
+							<video class="rounded w-100 gallery-img" controls>
+								<source
+									src="https://videos.pexels.com/video-files/1970039/1970039-hd_1920_1080_30fps.mp4"
+									srcset=""
+								/>
+							</video>
+							<figcaption class="figure-caption text-center">
+								Steve Johnson
+							</figcaption>
+						</figure></a
+					>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://videos.pexels.com/video-files/6617305/6617305-hd_1920_1080_30fps.mp4"
+					>
+						<figure class="figure">
+							<video class="rounded w-100 gallery-img" controls>
+								<source
+									src="https://videos.pexels.com/video-files/6617305/6617305-hd_1920_1080_30fps.mp4"
+									srcset=""
+								/>
+							</video>
+							<figcaption class="figure-caption text-center">
+								ad urpina
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://videos.pexels.com/video-files/7794281/7794281-uhd_3840_2160_25fps.mp4"
+					>
+						<figure class="figure">
+							<video class="rounded w-100 gallery-img" controls>
+								<source
+									src="https://videos.pexels.com/video-files/7794281/7794281-uhd_3840_2160_25fps.mp4"
+									srcset=""
+								/>
+							</video>
+							<figcaption class="figure-caption text-center">
+								Dan Cristian Pădureț
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://videos.pexels.com/video-files/854136/854136-hd_1920_1080_25fps.mp4"
+					>
+						<figure class="figure">
+							<video class="rounded w-100 gallery-img" controls>
+								<source
+									src="https://videos.pexels.com/video-files/854136/854136-hd_1920_1080_25fps.mp4"
+									srcset=""
+								/>
+							</video>
+							<figcaption class="figure-caption text-center">Coverr</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="mx-auto d-block col-lg-4 col-md-6">
+					<a
+						href="https://videos.pexels.com/video-files/4753007/4753007-uhd_3840_2160_24fps.mp4"
+					>
+						<figure class="figure">
+							<video class="rounded w-100 gallery-img" controls>
+								<source
+									src="https://videos.pexels.com/video-files/4753007/4753007-uhd_3840_2160_24fps.mp4"
+									srcset=""
+								/>
+							</video>
+							<figcaption class="figure-caption text-center">Coverr</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container">
+			<footer
+				class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+			>
+				<p class="col-md-4 mb-0 text-body-secondary">© 2024 Art Gallery</p>
+
+				<a
+					href="/"
+					class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+				>
+					<svg class="bi me-2" width="40" height="32">
+						<use xlink:href="#bootstrap"></use>
+					</svg>
+				</a>
+
+				<ul class="nav col-md-4 justify-content-end">
+					<li class="nav-item">
+						<a href="./index.html" class="nav-link px-2 text-body-secondary"
+							>Photo Art Gallery</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link px-2 text-body-secondary"
+							>Video Art Gallery</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="./about.html" class="nav-link px-2 text-body-secondary"
+							>About Me</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="./contact.html" class="nav-link px-2 text-body-secondary"
+							>Contact Me</a
+						>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
